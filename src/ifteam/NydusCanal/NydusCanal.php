@@ -387,7 +387,7 @@ class NydusCanal extends PluginBase implements Listener {
 			}
 		}
 		$player->teleport ( new Position ( $x, $y, $z, $level ), $yaw, $pitch );
-		$player->addEntityMotion ( 0, 0, 0.6, 0 );
+		//$player->addEntityMotion ( 0, 0, 0.6, 0 );
 		$player->sendMessage ( TextFormat::LIGHT_PURPLE . "[ 서버 ] " . $warp . " (으)로 워프 되었습니다" );
 		$this->particle ( $player );
 		if (isset ( $this->NydusCanal_List ["warp"] [$warp] ["price"] ) and $this->checkEconomyAPI ()) {
